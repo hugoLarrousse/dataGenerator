@@ -1,6 +1,7 @@
 /* Modules */
 const express = require('express');
 const bodyParser = require('body-parser');
+const { generateDate } = require('./uinamesApi');
 
 const app = express();
 const server = require('http').createServer(app);
@@ -12,8 +13,9 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.get('/', function (req, res) {
-    res.status(200).send("ok");
+app.get('/', async (req, res) => {
+    const data = await generateDate(5)
+    res.status(200).json(data);
 });
 
 server.listen(port, function (res) {
