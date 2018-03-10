@@ -4,7 +4,8 @@
   "description": "This is a generator of data",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/hugoLarrousse/dataGenerator/issues"
   },
-  "homepage": "https://github.com/hugoLarrousse/dataGenerator#readme"
+  "homepage": "https://github.com/hugoLarrousse/dataGenerator#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
 }
