@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', async (req, res) => {
-    const data = await generateDate(5)
+    const data = await generateDate(req.query.size || 0);
     res.status(200).json(data);
 });
 
