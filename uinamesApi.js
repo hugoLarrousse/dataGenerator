@@ -1,11 +1,12 @@
 const request = require('request-promise');
+const config = require('./config');
 
 const generateDate = async (size) => {
   try {
     const options = {
-      uri :'https://uinames.com/api/',
+      uri :config.url,
       qs: {
-        amount: size || 1,
+        amount: size || config.defaultSize,
       },
     };
     const body = await request(options);
