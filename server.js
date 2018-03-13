@@ -13,10 +13,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', async (req, res) => {
-    const data = await generateDate(req.query.size || 0);
+    const data = await generateDate(req.query);
     res.status(200).json(data);
 });
 
 server.listen(config.port, function (res) {
-    console.log("DataGenerator API is running on " + port);
+    console.log("DataGenerator API is running on " + config.port);
 });
