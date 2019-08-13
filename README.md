@@ -1,7 +1,7 @@
 # DataGenerator
 The idea is to provide Data exactly how the user want it.
 
-ex : "I want 100 user with a name and a surname"
+ex : "I want 100 users with a name and a surname"
 ## TO DO
 
 ### First Step
