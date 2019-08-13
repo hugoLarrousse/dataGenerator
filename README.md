@@ -1,13 +1,13 @@
 # DataGenerator
 The idea is to provide Data exactly how the user want it.
 
-ex : "I want 100 json with a name and a surname"
+ex : "I want 100 user with a name and a surname"
 ## TO DO
 
 ### First Step
 - Open question as starting point
   * [ ] which data I want to generate automatically
-  * [ ] should I let the user choose what he want?
+  * [ ] should I let the user choose what he wants?
   * [ ] create "Type of data" and expose to the user?
   * [ ] should I use external api to get data?
   * [ ] what is the point of all of this?
@@ -16,7 +16,6 @@ ex : "I want 100 json with a name and a surname"
 - How develop the bot?
   * [x] technology?
   * [x] time per week?
-  * [ ] alone?
 
 
 ### What I want?
@@ -33,10 +32,7 @@ ex : "I want 100 json with a name and a surname"
 ### Technology
 I want a nodeJS app with a front
 * Back-end : nodeJS + Express
-* Front-end: html/css/javascript (typically a survey + an extract zone + download ?)
+* Front-end: html/css/javascript (typically a survey + an extract zone + download), need a framework? vuejs?
 
 ### How much time per week?
 15 minutes per week
-
-### Alone? 
-alone for now
